@@ -1,0 +1,839 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main {
+    background: $gradient1;
+    // height: 100vh;
+    position: relative;
+    &__text {
+        margin-bottom: 4.5rem;
+        margin-top: 2rem;
+        font-size: 2.6rem;
+        font-family: $font_1;
+        color: #fff;
+    }
+    &__row {
+        display: flex;
+        @include bp($point_2) {
+            flex-wrap: wrap;
+        }
+    }
+    &__col {
+        @include bp($point_4) {
+            width: 100%;
+        }
+    }
+    &__img-bg {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        @include bp($point_1) {
+            display: none;
+        }
+    }
+    &__img-bg img {
+        @include bp($point_0) {
+            width: 80%;
+        }
+    }
+    &__col-left {
+        margin-left: 13rem;
+        @include bp($point_2) {
+            margin-left: 0rem;
+        }
+    }
+    &__col-right {
+        position: relative;
+        @include bp($point_4) {
+            margin: auto;
+        }
+    }
+    &__img-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        img {
+            @include bp($point_0) {
+                width: 90%;
+            }
+        }
+    }
+}
+
+.slick-arrow {
+    @include bp($point_2) {
+        display: none !important;
+    }
+}
+
+.advant-main-screen {
+    // padding-bottom: 17.3rem;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        padding: 3.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 25rem;
+        border-radius: 1rem;
+        background-color: rgba(0, 0, 0, 0.11);
+        margin-right: 1.8rem;
+        @include bp($point_4) {
+            margin-right: 1rem;
+        }
+        img {
+            margin-bottom: 1.6rem;
+            // position: absolute;
+            // left: 50%;
+            // transform: translate(0%, -50%);
+        }
+        p {
+            text-align: center;
+            color: #fff;
+            font-family: $font_5;
+            font-size: 1.6rem;
+            @include bp($point_4) {
+                font-size: 1.2rem;
+                ;
+            }
+        }
+    }
+}
+
+.widget-img {
+    margin-top: 6.7rem;
+    position: absolute;
+    right: 0rem;
+    @include bp($point_1) {
+        display: none;
+    }
+}
+
+.widget-img-footer {
+    bottom: 0;
+    // bottom: -10%;
+    position: absolute;
+    // bottom: -18%;
+    left: -50%;
+    img {
+        @include bp($point_0) {
+            width: 90%;
+        }
+        @include bp($point_2) {
+            display: none;
+        }
+    }
+}
+
+.widget {
+    margin-bottom: 10rem;
+    margin-right: 16rem;
+    margin-left: 2rem;
+    position: relative;
+    width: 40rem;
+    padding: 5.2rem 3rem;
+    margin-top: 11.2rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    z-index: 999;
+    @include bp($point_2) {
+        margin-right: 0rem !important;
+    }
+    @include bp($point_4) {
+        width: 100%;
+        margin-top: 3rem;
+        margin-left: 0rem;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2.2rem;
+        color: $color3;
+    }
+    &__form label {
+        font-size: 1.4rem;
+        font-family: $font_2;
+    }
+    &__form p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-family: $font_2;
+    }
+    &__input-style {
+        width: 100%;
+        height: 4rem;
+        border-radius: 1rem;
+        border: 1px solid #C4C4C4;
+    }
+    &__footer {
+        margin-top: 9.8rem;
+    }
+    &__footer-block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__footer-block p {
+        font-size: 1.4rem;
+        color: #191D3A;
+    }
+    &__footer-price {
+        font-size: 1.8rem;
+        font-size: $font_1;
+        color: $color3;
+    }
+    &__loading-logo {
+        margin-top: 1rem;
+    }
+    &__form-button {
+        margin-top: 2.2rem;
+        height: 5rem;
+    }
+}
+
+.input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.input__file-button-text {
+    margin-top: 1px;
+    margin: auto;
+}
+
+.input__file-button {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 125px;
+    height: 125px;
+    background: #fff;
+    color: $color3;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    border-radius: 3px;
+    cursor: pointer;
+    background-image: url('../i/border-style.svg');
+    background-repeat: no-repeat;
+}
+
+input::placeholder {
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    font-family: $font_2;
+}
+
+.advantagesBlock {
+    &__list {
+        margin-top: 7.5rem;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        @include bp($point_2) {
+            flex-wrap: wrap;
+        }
+        @include bp($point_4) {
+            margin-top: 0rem;
+        }
+    }
+    &__item {
+        margin-left: 5rem;
+        border-radius: 1rem;
+        padding: 2rem 5rem;
+        background: $gradient1;
+        @include bp($point_2) {
+            margin-top: 2rem;
+            padding: 2rem 4rem;
+        }
+        @include bp($point_4) {
+            margin-left: 0rem;
+            width: 100%;
+        }
+    }
+    &__item-title {
+        font-size: 6rem;
+        @include bp($point_4) {
+            font-size: 4.6rem;
+        }
+    }
+}
+
+.title-block-center {
+    // padding-left: 8rem;
+    // padding-right: 8rem;
+    display: flex;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #C3C3C3;
+    font-family: $font_5;
+    align-items: center;
+}
+
+.title-block-center::before {
+    margin-right: 8rem;
+    display: block;
+    content: '';
+    background-color: #D3D3D3;
+    height: 2px;
+    width: 38%;
+}
+
+.title-block-center::after {
+    margin-left: 8rem;
+    display: block;
+    content: '';
+    background-color: #D3D3D3;
+    height: 2px;
+    width: 38%;
+}
+
+.brands {
+    margin-top: 9rem;
+    @include bp($point_4) {
+        margin-top: 4rem;
+    }
+    &__list {
+        width: 100%;
+        padding-left: 25rem;
+        padding-right: 25rem;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        @include bp($point_2) {
+            padding: 0rem;
+        }
+        @include bp($point_4) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__item {
+        margin-top: 4rem;
+        margin-left: 4rem;
+        @include bp($point_2) {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.description-advant {
+    margin-top: 7rem;
+    @include bp($point_4) {
+        margin-top: 3rem;
+    }
+    &__img {
+        img {
+            width: 100%;
+            // @include bp($point_2) {
+            //     width: 50%;
+            // }
+        }
+    }
+    &__row {
+        display: flex;
+        @include bp($point_2) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    &__list {
+        margin-top: 17rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        @include bp($point_2) {
+            justify-content: center;
+        }
+        @include bp($point_4) {
+            margin-top: 0rem;
+        }
+    }
+    &__item {
+        margin-bottom: 6.5rem;
+        margin-right: 3rem;
+        width: 30rem;
+        border-radius: 2rem;
+        position: relative;
+        padding: 6.6rem 2.5rem 3rem 2.5rem;
+        border: 3px solid rgba(138, 96, 255, 0.04);
+    }
+    &__item-img {
+        position: absolute;
+        top: -20%;
+    }
+    &__item-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #E8DFFF;
+        width: 7rem;
+        height: 7rem;
+        background: $gradient1;
+        border-radius: 1.5rem;
+    }
+    &__item-txt {
+        font-size: 2rem;
+        color: #8A60FF;
+        font-family: $font_1;
+        line-height: 25px;
+    }
+    &__button {
+        display: block;
+        width: 40rem;
+        height: 8rem;
+        @include bp($point_2) {
+            margin: auto;
+        }
+    }
+}
+
+.our-work__title {
+    font-size: 4.8rem;
+    color: $color3;
+    font-family: $font_4;
+    text-transform: uppercase;
+    @include bp($point_4) {
+        font-size: 3.2rem;
+    }
+}
+
+.our-work-block {
+    margin-top: 14rem;
+}
+
+.prev2 {
+    top: 43% !important;
+    ;
+}
+
+.next2 {
+    top: 43% !important;
+    right: -9% !important;
+}
+
+.our_works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include bp($point_4) {
+        margin-top: 5rem;
+    }
+    &__slider {
+        @include bp($point_4) {
+            width: 100%;
+        }
+    }
+}
+
+// .our_works::after {
+//     position: absolute;
+//     left: 0;
+//     content: url('../i/bg-blur-1.png');
+//     @include bp($point_4) {
+//         display: none;
+//     }
+// }
+// .our_works::before {
+//     position: absolute;
+//     // top: 0;
+//     right: 0;
+//     content: url('../i/bg-blur-2.png');
+// }
+.slider {
+    margin-top: 3rem;
+    // width: 117rem;
+    padding-top: 3rem;
+    padding-left: 7rem;
+    padding-right: 3rem;
+    background: linear-gradient(110.58deg, #8A60FF 0%, #BDA6FF 100%);
+    border-radius: 2rem;
+    color: #fff;
+    z-index: 999;
+    @include bp($point_4) {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+    &__header-dote {
+        background-color: #fff;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        margin-right: 1.6rem;
+    }
+    p {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-family: $font_1;
+        margin-right: 1.6rem;
+    }
+    &__title {
+        padding-top: 4rem;
+        font-size: 4rem;
+        font-family: $font_4;
+    }
+    &__body-block {
+        margin-bottom: 3.2rem;
+        display: flex;
+        @include bp($point_4) {
+            flex-wrap: wrap;
+        }
+    }
+    &__body {
+        margin-top: -5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include bp($point_4) {
+            margin-top: 5%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__body-txt {
+        font-size: 2rem;
+        font-family: $font_1;
+    }
+    &__body-txt-name {
+        width: 175px;
+    }
+    &__body-txt-desck {
+        margin-left: 3rem;
+        width: 56rem;
+        font-family: $font_3;
+        @include bp($point_4) {
+            width: 100%;
+        }
+    }
+}
+
+.templateBlock {
+    margin-top: 19rem;
+    @include bp($point_4) {
+        margin-top: 3rem;
+    }
+    &__title {
+        margin-bottom: 4rem;
+        text-align: center;
+        font-size: 4.2rem;
+        color: $color3;
+        font-family: $font_4;
+        text-transform: uppercase;
+        @include bp($point_4) {
+            font-size: 3.6rem;
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 2.2rem;
+        font-family: $font_2;
+    }
+}
+
+@media (max-width: 1200px) {
+    .template {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .template img {
+        margin-bottom: 2rem;
+    }
+    .template div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.template {
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 90%;
+    }
+    // &__img-white {
+    //     width: 25%;
+    //     height: 300px;
+    //     position: absolute;
+    //     background: rgba(246, 246, 246, 0.96);
+    //     filter: blur(30px);
+    // }
+    &__text {
+        margin-top: 3.3rem;
+        text-align: center;
+        font-size: 3.2rem;
+        color: $color3;
+        font-family: $font_1;
+    }
+}
+
+// .template::after {
+//     top: 0;
+//     position: absolute;
+//     content: '';
+//     width: 100%;
+//     height: 100%;
+//     background: linear-gradient(90.18deg, rgba(247, 247, 247, 0.9216) 0.13%, rgba(247, 247, 247, 0) 49.55%, rgba(247, 247, 247, 0.96) 98.31%);
+// }
+.reviews {
+    &__title {
+        margin-bottom: 4rem;
+        text-align: center;
+        font-size: 4.2rem;
+        color: $color3;
+        font-family: $font_4;
+        text-transform: uppercase;
+        @include bp($point_4) {
+            font-size: 3.6rem;
+        }
+    }
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.reviews__item {
+    position: relative;
+    padding: 4.4rem 3rem;
+    display: flex !important;
+    width: 95% !important;
+    border: 5px solid transparent;
+    border-radius: 2rem;
+    background: linear-gradient(to right, white, white), linear-gradient(110.58deg, #4429EB 0%, #AE6FFF 69.85%, #FFE07D 95.84%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    @include bp($point_4) {
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+    }
+    &-name {
+        font-size: 1.8rem;
+        font-family: $font_1;
+    }
+    &-work {
+        font-size: 1.6rem;
+        font-family: $font_2;
+    }
+    &-text {
+        margin-top: 0.8rem;
+        font-size: 1.6rem;
+        font-family: $font_2;
+    }
+    &-rating {
+        margin-top: 0.8rem;
+        display: flex;
+    }
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    left: -10%;
+    top: 30%;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    right: -5%;
+}
+
+.reviews {
+    margin-top: 20rem;
+    @include bp($point_4) {
+        margin-top: 2rem;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__col-left {
+        margin-left: 3rem;
+        @include bp($point_4) {
+            margin-left: 0rem;
+        }
+    }
+    &__list {
+        position: relative;
+    }
+}
+
+.offerBlock__list {
+    margin-top: 3rem;
+    li {
+        margin-top: 1.5rem;
+        display: flex;
+        color: $color3;
+        font-size: 2rem;
+        font-family: $font_1;
+        align-items: center;
+    }
+    p {
+        margin-left: 0.5rem;
+    }
+}
+
+.offerBlock {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    @include bp($point_2) {
+        flex-wrap: wrap;
+    }
+    @include bp($point_4) {
+        justify-content: center;
+    }
+    &__col-right {
+        margin-top: 10%;
+        width: 40%;
+        margin-left: 12%;
+        @include bp($point_2) {
+            margin-left: 5%;
+        }
+        @include bp($point_2) {
+            width: 100%;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+        font-size: 4.2rem;
+        color: $color3;
+        font-family: $font_4;
+        @include bp($point_4) {
+            font-size: 3.6rem;
+        }
+    }
+    &__text {
+        margin-top: 3rem;
+        font-size: 2.4rem;
+        color: #474747;
+    }
+    &__col {
+        margin-top: 18%;
+        position: relative;
+        margin-right: 18%;
+        @include bp($point_2) {
+            margin-right: 5%;
+        }
+        @include bp($point_4) {
+            margin-right: 0%;
+            margin-left: 0%;
+        }
+    }
+}
+
+.offerBlock__feed {
+    position: absolute;
+    bottom: 0;
+    img {
+        width: 100%;
+    }
+    @include bp($point_2) {
+        display: none;
+    }
+}
+
+.tariffWidget {
+    position: relative;
+    padding: 7.5rem 6.5rem;
+    background: #fff;
+    text-align: center;
+    border-radius: 1rem;
+    filter: drop-shadow(0 0 100px rgba(68, 41, 235, 0.2));
+    z-index: 3;
+    @include bp($point_4) {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__name {
+        font-size: 3.2rem;
+        color: $color3;
+        font-family: $font_1;
+    }
+    &__subName {
+        font-size: 4.6rem;
+        font-family: $font_4;
+        @include bp($point_4) {
+            font-size: 3.2rem;
+        }
+    }
+    &__list {
+        margin-top: 4rem;
+        li {
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            color: $color3;
+            font-size: 2rem;
+        }
+        p {
+            margin-left: 0.5rem;
+        }
+    }
+    &__price {
+        margin-top: 8rem;
+        color: #28A745;
+        font-size: 4.5rem;
+        letter-spacing: -2%;
+        font-family: $font_4;
+        @include bp($point_4) {
+            font-size: 3.2rem;
+        }
+    }
+    &__button {
+        margin-top: 9rem;
+        height: 8rem;
+        color: #fff;
+    }
+}
+
+.offerBlock__col::before {
+    border-radius: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -2%;
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 104%;
+    background: linear-gradient(73.58deg, #4429EB 0%, #AE6FFF 69.85%, #FFE07D 95.84%);
+    z-index: 1;
+    @include bp($point_4) {
+        width: 80%;
+    }
+}

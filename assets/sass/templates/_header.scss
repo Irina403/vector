@@ -1,0 +1,300 @@
+/* desktop mode............/// */
+
+header {
+    @include bp($point_2) {
+        height: 9rem;
+    }
+}
+
+.button-header-mobile {
+    display: none;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.contact-box__messanger-mobile {
+    display: none;
+}
+
+.logo-icon-mobile {
+    display: none;
+}
+
+.navbar {
+    // position: absolute;
+    width: 100%;
+    background: transparant;
+    color: $black;
+    opacity: 0.85;
+    z-index: 12;
+    background-color: #fff;
+    &__flex {
+        // padding-top: 1.2rem;
+        height: 13rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navItem {
+    margin-right: 6rem;
+    &__dropdown-img {
+        margin-left: 1rem;
+    }
+}
+
+.button-header {
+    display: flex;
+    align-items: center;
+}
+
+.btn-enter a {
+    color: $black;
+    font-family: $font_2;
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-icon {
+    &__img {
+        margin-right: 4.3rem;
+    }
+}
+
+// .btn-register {
+// s
+// }
+.btn-register a {
+    padding: 1rem;
+}
+
+.menu-items {
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.menu-items a {
+    color: $black;
+    text-decoration: none;
+    // font-size: 1.4rem;
+    font-family: $font_2;
+    // margin-right: 6rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+    transition: color 0.3s ease-in-out;
+}
+
+.tel a:hover {
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* ............//// Showcase styling ////......... */
+
+// .contact-box {
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     justify-content: space-between;
+//     &__phone-icon {
+//         display: flex;
+//         align-items: center;
+//     }
+//     &__phone-icon a {
+//         color: #fff;
+//         font-family: $font_2;
+//         text-decoration: none;
+//         margin-left: 1.5rem;
+//     }
+//     &__messanger {
+//         display: flex;
+//     }
+//     &__messanger-icon {
+//         margin-right: 3rem;
+//     }
+//     &__button-call {
+//         width: 21.8rem;
+//         height: 5.2rem;
+//     }
+// }
+// .contact-box__button-call{
+// 	margin-top: 3.5rem;
+// }
+.contact-box__tel {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .button-header {
+        display: none;
+    }
+    .button-header-mobile {
+        display: block;
+        margin-top: 5rem;
+    }
+    .mobile-register {
+        width: 75%;
+        margin-top: 2rem;
+    }
+    .hamburger-lines {}
+    .contact-box__tel {
+        display: block;
+    }
+    .logo-icon-mobile {
+        display: block;
+        margin-bottom: 3rem;
+    }
+    .contact-box__tel {
+        margin-top: 25px;
+    }
+    .navbar {
+        padding-top: 0rem;
+    }
+    .logo-icon-desc {
+        position: absolute;
+        padding-top: 10px;
+        // display: none;
+    }
+    .contact-box__button-call {
+        display: none !important;
+    }
+    .contact-box__messanger-desck {
+        display: none;
+    }
+    .contact-box__messanger-mobile {
+        display: flex;
+    }
+    .contact-box__messanger-icon {
+        margin-top: 4.5rem;
+        margin-left: 0rem;
+        margin-right: 3rem;
+    }
+    .contact-box {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: -1;
+    }
+    .navbar {
+        opacity: 1;
+    }
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+        display: block;
+    }
+    .navbar-container {
+        display: block;
+        position: relative;
+        height: 6.4rem;
+        width: 100%;
+    }
+    .navbar-container input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 2rem;
+        //   left: 2rem;
+        z-index: 5;
+        opacity: 0;
+        width: 100%;
+    }
+    .navbar-container .hamburger-lines {
+        display: block;
+        height: 23px;
+        width: 35px;
+        position: absolute;
+        top: 40px;
+        right: -10px;
+        //   left: 5px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navbar-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: $color3;
+    }
+    .navbar-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+    .navbar-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .menu-items {
+        position: absolute;
+        z-index: 9999;
+        margin-top: -10px;
+        padding-left: 30px;
+        padding-top: 10px;
+        background: #fff;
+        color: $black;
+        ;
+        height: 100vh;
+        max-width: 340px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        //   padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+    }
+    .menu-toggle-open {
+        margin-left: -300px;
+    }
+    .navbar .menu-items li {
+        margin-bottom: 1.5rem;
+        // font-size: 1.4rem;
+        font-weight: 500;
+        color: $black;
+    }
+    .menu-items a {
+        color: $black;
+        margin-left: 0rem;
+    }
+    .menu-items li {
+        margin-left: 0rem;
+    }
+    .navbar-container input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(0);
+    }
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+        transform: rotate(35deg);
+    }
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+        transform: rotate(-35deg);
+    }
+    // .logo-icon-mobile{
+    // 	margin-bottom: 3.2rem;
+    // }
+}
