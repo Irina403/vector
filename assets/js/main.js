@@ -28,13 +28,13 @@ $(document).ready(function() {
 
         ]
     });
-    $('.slider-work').slick({
+    $('.slider-banner ').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
-        prevArrow: "<img src='i/icons/arrow-prev2.svg' class='prev prev2' alt='1'>",
-        nextArrow: "<img src='i/icons/arrow-next2.svg' class='next next2' alt='2'>",
+        dots: false,
+        prevArrow: "<img src='i/icons/arrow-prev.svg' class='arrow prev2' alt='1'>",
+        nextArrow: "<img src='i/icons/arrow-next.svg' class='arrow next2' alt='2'>",
         responsive: [{
                 breakpoint: 1200,
                 settings: {

@@ -24,13 +24,12 @@ header {
 }
 
 .navbar {
-    // position: absolute;
     width: 100%;
     background: transparant;
-    color: $black;
-    opacity: 0.85;
-    z-index: 12;
-    background-color: #fff;
+    color: #000;
+    background-color: $yellow;
+    display: flex;
+    align-items: center;
     &__flex {
         // padding-top: 1.2rem;
         height: 13rem;
@@ -40,22 +39,11 @@ header {
 }
 
 .navItem {
-    margin-right: 6rem;
+    margin-right: 2.6rem;
+    font-size: 1.8rem;
     &__dropdown-img {
         margin-left: 1rem;
     }
-}
-
-.button-header {
-    display: flex;
-    align-items: center;
-}
-
-.btn-enter a {
-    color: $black;
-    font-family: $font_2;
-    text-decoration: none;
-    margin-right: 3rem;
 }
 
 .navbar-container {
@@ -70,15 +58,9 @@ header {
     }
 }
 
-// .btn-register {
-// s
-// }
-.btn-register a {
-    padding: 1rem;
-}
-
 .menu-items {
     display: flex;
+    align-items: center;
 }
 
 .menu-items li {
@@ -87,11 +69,10 @@ header {
 }
 
 .menu-items a {
-    color: $black;
+    color: #000;
     text-decoration: none;
-    // font-size: 1.4rem;
+    font-size: 1.8rem;
     font-family: $font_2;
-    // margin-right: 6rem;
     transition: color 0.3s ease-in-out;
 }
 
@@ -101,6 +82,25 @@ header {
 
 .tel a:hover {
     transition: color 0.3s ease-in-out;
+}
+
+.phoneBox__item {
+    &-tel {
+        // margin-top: 8px;
+        display: flex;
+        align-items: center;
+    }
+    &-tel:nth-child(1) {
+        margin-bottom: 11px;
+    }
+    &-tel img {
+        margin-right: 7px;
+    }
+    &-tel a {
+        font-family: $font_2;
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 

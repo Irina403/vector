@@ -6,22 +6,25 @@ $header_mob: 10rem;
 $footer_mob: 10rem;
 //---------------------------------------------fonts
 $font_path: "../fonts/";
-$font_1: 'Montserrat-Bold',
+$font_1: 'akzidenzgroteskpro-boldex',
 sans-serif;
-$font_2: 'Montserrat-Regular',
+$font_2: 'Gilroy-Medium',
 sans-serif;
-$font_4: 'Montserrat-Black',
+$font_3: 'akzidenzgroteskpro-ext',
 sans-serif;
-$font_5: 'Montserrat-Medium',
+$font_4: 'akzidenzgroteskpro-mdex',
 sans-serif;
-$font_3: 'Gilroy-Regular',
-sans-serif;
+// $font_4: 'Montserrat-Black',
+// sans-serif;
+// $font_5: 'Montserrat-Medium',
+// sans-serif;
 $font_size_base: 1.8rem;
 //---------------------------------------------fonts###
 //---------------------------------------------colors
 $white: #fff;
 $black: #303030;
 $gray: #6C6C6C;
+$yellow: #F3C60A;
 $gold: #ffe100;
 $color3:#8A60FF;
 $gradient: linear-gradient(178.58deg, #FF5C01 19.37%, #FF214F 79.34%);
