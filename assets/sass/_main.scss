@@ -218,11 +218,55 @@
             }
         }
         
-        .project-block {
-            text-align: right;
-            margin-right: 0;
-        }
-        
+        // .project-block {
+        //     margin-right: 0;
+        // }
         .titleBlock-floatRight {
             float: right;
+            margin-top: -15rem;
         }
+        
+        .project-block {
+            &__row {
+                margin-top: 30rem;
+                display: flex;
+                justify-content: space-between;
+            }
+            &__text {
+                margin-top: 2.4rem;
+                font-size: 1.8rem;
+                color: #000;
+                font-family: $font_4;
+            }
+            &__item {
+                margin-right: 20px;
+            }
+        }
+        
+        .arrow-black {
+            position: absolute;
+            z-index: 9;
+            top: 50%;
+            cursor: pointer;
+        }
+        
+        .next3 {
+            right: 0;
+        }
+        
+        .prev3 {
+            left: -4%;
+        }
+        
+        .partners-block {
+            &__row {
+                margin-top: 6rem;
+            }
+            &__list {
+                margin-left: 4%;
+            }
+        }
+        
+        // .slick-list {
+        //     margin-left: 4% !important;
+        // }

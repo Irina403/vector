@@ -1,9 +1,9 @@
 /* desktop mode............/// */
 
 header {
-    @include bp($point_2) {
-        height: 9rem;
-    }
+    // @include bp($point_2) {
+    //     height: 9rem;
+    // }
 }
 
 .button-header-mobile {
@@ -30,6 +30,9 @@ header {
     background-color: $yellow;
     display: flex;
     align-items: center;
+    @include bp($point_2) {
+        padding-bottom: 15px;
+    }
     &__flex {
         // padding-top: 1.2rem;
         height: 13rem;
@@ -41,8 +44,35 @@ header {
 .navItem {
     margin-right: 2.6rem;
     font-size: 1.8rem;
+    &:hover {
+        text-decoration: underline;
+        .navItem__submenu {
+            display: block;
+        }
+    }
     &__dropdown-img {
         margin-left: 1rem;
+    }
+}
+
+// .navItem {
+//     line-height: 45px;
+// }
+.navItem__submenu {
+    // padding: 10px;
+    font-weight: 300;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 220px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    z-index: 9;
+    &-item {
+        padding: 8px;
+        &:hover {
+            background: rgba( #000, 0.1);
+        }
     }
 }
 
@@ -61,6 +91,10 @@ header {
 .menu-items {
     display: flex;
     align-items: center;
+}
+
+.menu-items__submenu {
+    display: block;
 }
 
 .menu-items li {
@@ -103,38 +137,6 @@ header {
     }
 }
 
-
-/* ............//// Showcase styling ////......... */
-
-// .contact-box {
-//     display: flex;
-//     align-items: center;
-//     width: 100%;
-//     justify-content: space-between;
-//     &__phone-icon {
-//         display: flex;
-//         align-items: center;
-//     }
-//     &__phone-icon a {
-//         color: #fff;
-//         font-family: $font_2;
-//         text-decoration: none;
-//         margin-left: 1.5rem;
-//     }
-//     &__messanger {
-//         display: flex;
-//     }
-//     &__messanger-icon {
-//         margin-right: 3rem;
-//     }
-//     &__button-call {
-//         width: 21.8rem;
-//         height: 5.2rem;
-//     }
-// }
-// .contact-box__button-call{
-// 	margin-top: 3.5rem;
-// }
 .contact-box__tel {
     display: none;
 }
@@ -221,7 +223,7 @@ header {
         height: 23px;
         width: 35px;
         position: absolute;
-        top: 40px;
+        top: 20px;
         right: -10px;
         //   left: 5px;
         z-index: 2;

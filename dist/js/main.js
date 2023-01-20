@@ -1,15 +1,15 @@
 $(document).ready(function() {
-    $('.reviews__list').slick({
+    $('.partners-block__list').slick({
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        dots: true,
-        prevArrow: "<img src='i/icons/arrow-prev2.svg' class='prev' alt='1'>",
-        nextArrow: "<img src='i/icons/arrow-next2.svg' class='next' alt='2'>",
+        dots: false,
+        prevArrow: "<img src='i/icons/arrow-prev-black.svg' class='arrow-black prev3' alt='1'>",
+        nextArrow: "<img src='i/icons/arrow-next-black.svg' class='arrow-black next3' alt='2'>",
         responsive: [{
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     // arrows: false,
                     infinite: true,
