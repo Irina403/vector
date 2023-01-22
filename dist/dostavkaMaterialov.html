@@ -74,15 +74,84 @@
                 <h2>Доставка сыпучих <br> материалов</h2>
                 <div class="titleBlock__lines"></div>
               </div>
-              <select id="material">
-                <option value="pgs">ПГС</option>
-                <option value="pesok">Песок</option>
-                <option value="grunt">Грунт растительный</option>
-              </select>
-              <input type="text" id="volume" placeholder="Объем в кубах">
-              <input type="text" id="distance" placeholder="Расстояние в км">
-              <button onclick="raschitat();">Рассчитать стоимость</button>
-              <div id="stoimost"></div>
+              <div class="calcBlock"> 
+                <div class="calcBlock__ttitle">Расчёт стоимости <br> транспортировки</div>
+                <div class="calcBlock__row"> 
+                  <div class="calcBlock__col">
+                    <div class="calcBlock__titleCol calcBlock__titleCol-textRight">Расчет в кубах</div>
+                    <div class="calcBlock__box">
+                      <p class="calcBlock__inputTitle">Выберите материал</p>
+                      <select id="material">
+                        <option value="pgs">ПГС</option>
+                        <option value="pesok">Песок</option>
+                        <option value="grunt">Грунт растительный</option>
+                      </select>
+                      <p class="calcBlock__inputTitle">Объем в кубах</p>
+                      <input class="calcBlock__input" type="text" id="volume" placeholder="">
+                      <p class="calcBlock__inputTitle">Расстояние в км</p>
+                      <input class="calcBlock__input" type="text" id="distance" placeholder="">
+                      <button class="calcBlock__button" onclick="raschitat();">Рассчитать </button>
+                      <div id="stoimost"></div>
+                    </div>
+                  </div>
+                  <div class="calcBlock__col">
+                    <div class="calcBlock__titleCol">Расчет в тоннах</div>
+                    <div class="calcBlock__box-right">
+                      <p class="calcBlock__inputTitle">Выберите материал</p>
+                      <select id="material">
+                        <option value="pgs">ПГС</option>
+                        <option value="pesok">Песок</option>
+                        <option value="grunt">Грунт растительный</option>
+                      </select>
+                      <p class="calcBlock__inputTitle">Кол-во тонн</p>
+                      <input class="calcBlock__input" type="text" id="volume" placeholder="">
+                      <p class="calcBlock__inputTitle">Расстояние в км.</p>
+                      <input class="calcBlock__input" type="text" id="distance" placeholder="">
+                      <button class="calcBlock__button" onclick="raschitat();">Рассчитать </button>
+                      <div id="stoimost"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calcBlock__row"> 
+                  <div class="calcBlock__footer">Cтоимость перевозки может быть скорректирована по соглашению сторон в зависимости от факторов влияющих на логистику перевозки, от обьёма заказа услуги и от плеча перевозки. Для определения окончательной цены необходимо связаться с коммерческим отделом</div>
+                </div>
+              </div>
+              <div class="priceBlock"> 
+                <div class="priceBlock__title">Прайс </div>
+                <div class="priceBlock__text">стоимость материала с доставкой в черте г.Череповец</div>
+                <div class="table-wrap"> 
+                  <table> 
+                    <thead> 
+                      <tr> 
+                        <th>Наименование материала</th>
+                        <th>Еденица измерения</th>
+                        <th>Насыпная плотность</th>
+                        <th>Цена за ед.измерения руб. с НДС до 100</th>
+                        <th>Цена за ед.измерения руб. с НДС от 100 до 1000</th>
+                        <th>Цена за ед.измерения руб. с НДС от 1000 и выше</th>
+                      </tr>
+                    </thead>
+                    <tbody> 
+                      <tr> 
+                        <td data-label="Наименование материала">ПГС</td>
+                        <td data-label="Еденица измерения">м3</td>
+                        <td data-label="Насыпная плотность">1,5</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">280</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">270</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">250</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">ПГС</td>
+                        <td data-label="Еденица измерения">м3</td>
+                        <td data-label="Насыпная плотность">1,5</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">280</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">270</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">250</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </section>

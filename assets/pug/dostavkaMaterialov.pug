@@ -6,12 +6,69 @@ block content_block
                 .titleBlock
                     h2 Доставка сыпучих <br> материалов
                     .titleBlock__lines
-                select#material
-                    option(value="pgs") ПГС
-                    option(value="pesok") Песок
-                    option(value="grunt") Грунт растительный
-                input(type="text" id="volume" placeholder="Объем в кубах")
-                input(type="text" id="distance" placeholder="Расстояние в км")
-                button(onclick="raschitat();") Рассчитать стоимость
-                div#stoimost
+                .calcBlock 
+                    .calcBlock__ttitle Расчёт стоимости <br> транспортировки
+                    .calcBlock__row 
+                        .calcBlock__col
+                            .calcBlock__titleCol.calcBlock__titleCol-textRight Расчет в кубах
+                            .calcBlock__box
+                                p.calcBlock__inputTitle Выберите материал
+                                select#material
+                                    option(value="pgs") ПГС
+                                    option(value="pesok") Песок
+                                    option(value="grunt") Грунт растительный
+                                p.calcBlock__inputTitle Объем в кубах
+                                input.calcBlock__input(type="text" id="volume" placeholder="")
+                                p.calcBlock__inputTitle Расстояние в км
+                                input.calcBlock__input(type="text" id="distance" placeholder="")
+                                button.calcBlock__button(onclick="raschitat();") Рассчитать 
+                                div#stoimost
+
+                        .calcBlock__col
+                            .calcBlock__titleCol Расчет в тоннах
+                            .calcBlock__box-right
+                                p.calcBlock__inputTitle Выберите материал
+                                select#material
+                                    option(value="pgs") ПГС
+                                    option(value="pesok") Песок
+                                    option(value="grunt") Грунт растительный
+                                p.calcBlock__inputTitle Кол-во тонн
+                                input.calcBlock__input(type="text" id="volume" placeholder="")
+                                p.calcBlock__inputTitle Расстояние в км.
+                                input.calcBlock__input(type="text" id="distance" placeholder="")
+                                button.calcBlock__button(onclick="raschitat();") Рассчитать 
+                                div#stoimost
+                    .calcBlock__row 
+                        .calcBlock__footer Cтоимость перевозки может быть скорректирована по соглашению сторон в зависимости от факторов влияющих на логистику перевозки, от обьёма заказа услуги и от плеча перевозки. Для определения окончательной цены необходимо связаться с коммерческим отделом
+                    
+                .priceBlock 
+                    .priceBlock__title Прайс 
+                    .priceBlock__text стоимость материала с доставкой в черте г.Череповец
+
+                    .table-wrap 
+                        table 
+                            thead 
+                                tr 
+                                    th Наименование материала
+                                    th Еденица измерения
+                                    th Насыпная плотность
+                                    th Цена за ед.измерения руб. с НДС до 100
+                                    th Цена за ед.измерения руб. с НДС от 100 до 1000
+                                    th Цена за ед.измерения руб. с НДС от 1000 и выше
+                            tbody 
+                                tr 
+                                    td(data-label="Наименование материала") ПГС
+                                    td(data-label="Еденица измерения") м3
+                                    td(data-label="Насыпная плотность") 1,5
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 280
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 270
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 250
+                                tr 
+                                    td(data-label="Наименование материала") ПГС
+                                    td(data-label="Еденица измерения") м3
+                                    td(data-label="Насыпная плотность") 1,5
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 280
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 270
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 250
+
 
