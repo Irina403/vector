@@ -13,13 +13,10 @@ header
 						img(src="i/icons/logo.svg", alt="")
 				
 				ul.menu-items.menu-toggle-open
-					.logo-icon.logo-icon-mobile
-						.logo-icon__img 
-							img(src="i/icons/logo.svg", alt="")
 					li.navItem
 						a(href="#advant") Главная
 					li.navItem
-						a(href="#promotions") О нас
+						a(href="about.html") О нас
 					li.navItem
 						a(href="#price") Услуги
 						ul.navItem__submenu
@@ -28,7 +25,7 @@ header
 							li.navItem__submenu-item 
 								a Строительство зданий
 							li.navItem__submenu-item 
-								a Доставка сыпучих материалов
+								a(href="dostavkaMaterialov.html") Доставка сыпучих материалов
 							li.navItem__submenu-item 
 								a Промышленное строительство
 							li.navItem__submenu-item 
@@ -58,13 +55,24 @@ header
 						a(href="#price") Презентация
 					li.navItem
 						a(href="#price") Контакты
-				//- .phoneBox 
-				//- 	.phoneBox__item
-				//- 		.phoneBox__item-tel
-				//- 			img(src="i/icons/icon-phone.svg", alt="")
-				//- 			a(href="tel:8202598899") (8202)59-88-99
+
+					.phoneBox.phoneBox-mobile
+						.phoneBox__item
+							.phoneBox__item-tel
+								img(src="i/icons/icon-phone.svg", alt="")
+								a(href="tel:8202598899") (8202)59-88-99
+								
+							.phoneBox__item-tel
+								img(src="i/icons/icon-phone.svg", alt="")
+								a(href="tel:+79517310840") 8(951)731-08-40
+
+				.phoneBox.phoneBox-desck 
+					.phoneBox__item
+						.phoneBox__item-tel
+							img(src="i/icons/icon-phone.svg", alt="")
+							a(href="tel:8202598899") (8202)59-88-99
 							
-				//- 		.phoneBox__item-tel
-				//- 			img(src="i/icons/icon-phone.svg", alt="")
-				//- 			a(href="tel:+79517310840") 8(951)731-08-40
+						.phoneBox__item-tel
+							img(src="i/icons/icon-phone.svg", alt="")
+							a(href="tel:+79517310840") 8(951)731-08-40
 

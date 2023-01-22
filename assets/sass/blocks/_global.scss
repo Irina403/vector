@@ -34,9 +34,10 @@ h1 {
         font-size: 3.6rem;
         line-height: 4rem;
     }
-    // @include bp($point_5) {
-    //     font-size: 30px;
-    // }
+    @include bp($point_5) {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
 }
 
 h2 {
@@ -52,6 +53,12 @@ h3 {
 
 a {
     text-decoration: none;
+}
+
+.mobile-indent {
+    @include bp($point_4) {
+        margin-top: 20px;
+    }
 }
 
 .title-block {

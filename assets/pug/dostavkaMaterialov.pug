@@ -1,0 +1,17 @@
+extends _layout
+block content_block
+    section
+        .section_in
+            .aboutPage.indentation
+                .titleBlock
+                    h2 Доставка сыпучих <br> материалов
+                    .titleBlock__lines
+                select#material
+                    option(value="pgs") ПГС
+                    option(value="pesok") Песок
+                    option(value="grunt") Грунт растительный
+                input(type="text" id="volume" placeholder="Объем в кубах")
+                input(type="text" id="distance" placeholder="Расстояние в км")
+                button(onclick="raschitat();") Рассчитать стоимость
+                div#stoimost
+

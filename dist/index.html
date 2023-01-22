@@ -22,16 +22,13 @@
               <div class="logo-icon__img"> <img src="i/icons/logo.svg" alt=""></div>
             </div>
             <ul class="menu-items menu-toggle-open">
-              <div class="logo-icon logo-icon-mobile">
-                <div class="logo-icon__img"> <img src="i/icons/logo.svg" alt=""></div>
-              </div>
               <li class="navItem"><a href="#advant">Главная</a></li>
-              <li class="navItem"><a href="#promotions">О нас</a></li>
+              <li class="navItem"><a href="about.html">О нас</a></li>
               <li class="navItem"><a href="#price">Услуги</a>
                 <ul class="navItem__submenu">
                   <li class="navItem__submenu-item"> <a>Аренда техники</a></li>
                   <li class="navItem__submenu-item"> <a>Строительство зданий</a></li>
-                  <li class="navItem__submenu-item"> <a>Доставка сыпучих материалов</a></li>
+                  <li class="navItem__submenu-item"> <a href="dostavkaMaterialov.html">Доставка сыпучих материалов</a></li>
                   <li class="navItem__submenu-item"> <a>Промышленное строительство</a></li>
                   <li class="navItem__submenu-item"> <a>Строительство дорог</a></li>
                 </ul>
@@ -51,7 +48,19 @@
               </li>
               <li class="navItem"><a href="#price">Презентация</a></li>
               <li class="navItem"><a href="#price">Контакты</a></li>
+              <div class="phoneBox phoneBox-mobile">
+                <div class="phoneBox__item">
+                  <div class="phoneBox__item-tel"><img src="i/icons/icon-phone.svg" alt=""><a href="tel:8202598899">(8202)59-88-99</a></div>
+                  <div class="phoneBox__item-tel"><img src="i/icons/icon-phone.svg" alt=""><a href="tel:+79517310840">8(951)731-08-40</a></div>
+                </div>
+              </div>
             </ul>
+            <div class="phoneBox phoneBox-desck"> 
+              <div class="phoneBox__item">
+                <div class="phoneBox__item-tel"><img src="i/icons/icon-phone.svg" alt=""><a href="tel:8202598899">(8202)59-88-99</a></div>
+                <div class="phoneBox__item-tel"><img src="i/icons/icon-phone.svg" alt=""><a href="tel:+79517310840">8(951)731-08-40</a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -161,7 +170,7 @@
                 </div>
                 <div class="services-block__indentation"> 
                   <div class="services-block__row"> 
-                    <div class="services-block__col1">
+                    <div class="services-block__col1 services-block__col2-mobile">
                       <div class="services-block__link"> <a href="#">
                           <div class="services-block__img1">
                             <div class="services-block__title">
@@ -169,7 +178,7 @@
                             </div>
                           </div></a></div>
                     </div>
-                    <div class="services-block__col2">
+                    <div class="services-block__col2 services-block__col2-mobile">
                       <div class="services-block__link"> <a href="#">
                           <div class="services-block__img2">
                             <div class="services-block__title">
@@ -187,7 +196,7 @@
                             </div>
                           </div></a></div>
                     </div>
-                    <div class="services-block__col2">
+                    <div class="services-block__col2 services-block__col2-mobile">
                       <div class="services-block__link"> <a href="#">
                           <div class="services-block__img4">
                             <div class="services-block__title">
@@ -195,7 +204,7 @@
                             </div>
                           </div></a></div>
                     </div>
-                    <div class="services-block__col2">
+                    <div class="services-block__col2 services-block__col2-mobile">
                       <div class="services-block__link"> <a href="#">
                           <div class="services-block__img5">
                             <div class="services-block__title">
@@ -222,7 +231,7 @@
                   <div class="project-block__item"> <a href="#">
                       <div class="project-block__img"> <img src="i/projects/main-project2.jpg" alt=""></div>
                       <div class="project-block__text">Тихвинский <br> вагоностроительный завод</div></a></div>
-                  <div class="project-block__item"> <a href="#">
+                  <div class="project-block__item mobile-indent"> <a href="#">
                       <div class="project-block__img"> <img src="i/projects/main-project3.jpg" alt=""></div>
                       <div class="project-block__text">Прокладка <br> инженерных сетей</div></a></div>
                 </div>
@@ -280,8 +289,8 @@
               </div>
             </ul>
             <ul class="navFooter__list"> 
-              <p style="text-align:right;">меню</p>
-              <div class="navFooter__box" style="text-align:right;">
+              <p class="navFooter__titleRight">меню</p>
+              <div class="navFooter__box navFooter__titleRigh">
                 <li class="navFooter__item"> <a href=""> Главная</a></li>
                 <li class="navFooter__item"> <a href=""> О компании</a></li>
                 <li class="navFooter__item"> <a href=""> Объекты</a></li>
@@ -312,5 +321,6 @@
     <script src="js/libs.js"></script>
     <script src="js/components.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/wpcc.js"></script>
   </body>
 </html>

@@ -22,7 +22,7 @@
         }
         
         .prev2 {
-            margin-left: -7%;
+            margin-left: -100px;
         }
         
         .slider-banner {
@@ -60,35 +60,76 @@
         
         .itemBlock {
             margin-top: 8%;
+            @include bp($point_2) {
+                margin-top: 30%;
+            }
+            @include bp($point_5) {
+                margin-top: 65%;
+            }
         }
         
         .aboutCompany-block {
             &__row {
                 display: flex;
                 justify-content: space-between;
+                @include bp($point_4) {
+                    flex-direction: column;
+                }
             }
             &__box {
                 width: 60%;
                 display: flex;
                 align-items: flex-end;
+                @include bp($point_2) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                @include bp($point_4) {
+                    order: 2;
+                    margin-top: 40px;
+                }
+                @include bp($point_5) {
+                    width: 100%;
+                }
             }
             &__text {
                 margin-left: 9rem;
+                @include bp($point_2) {
+                    margin-left: 0rem;
+                }
             }
         }
         
         .titleBlock {
             display: flex;
             align-items: center;
+            @include bp($point_5) {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
             &__lines {
                 margin-right: 14px;
                 margin-left: 14px;
                 background-color: $yellow;
                 width: 100px;
                 height: 4px;
+                @include bp($point_4) {
+                    order: 2;
+                }
+                @include bp($point_4) {
+                    width: 80px;
+                }
+                @include bp($point_5) {
+                    margin-top: 5px;
+                    margin-left: 0px;
+                }
             }
             &__positionRight {
                 text-align-last: right;
+                @include bp($point_4) {
+                    text-align-last: left;
+                }
             }
         }
         
@@ -116,17 +157,29 @@
         
         .indentation {
             margin-top: 100px;
+            @include bp($point_5) {
+                margin-top: 50px;
+            }
         }
         
         .advantages {
             margin-top: 10rem;
+            @include bp($point_4) {
+                margin-top: 5rem;
+            }
             &__row {
                 display: flex;
                 justify-content: space-between;
+                @include bp($point_4) {
+                    flex-direction: column;
+                }
             }
             &__col {
                 display: flex;
                 align-items: center;
+                @include bp($point_4) {
+                    margin-bottom: 25px;
+                }
             }
             &__figure {
                 font-size: 4.2rem;
@@ -144,6 +197,12 @@
             height: 55px;
             width: 1px;
             background-color: #8A8A8A;
+            @include bp($point_2) {
+                margin-left: 2.5rem;
+            }
+            @include bp($point_4) {
+                display: none;
+            }
         }
         
         .col-center::before {
@@ -152,6 +211,12 @@
             height: 55px;
             width: 1px;
             background-color: #8A8A8A;
+            @include bp($point_2) {
+                margin-right: 2.5rem;
+            }
+            @include bp($point_4) {
+                display: none;
+            }
         }
         
         .services-block {
@@ -159,6 +224,9 @@
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+                @include bp($point_2) {
+                    flex-wrap: wrap;
+                }
                 &-indentation {
                     margin-top: 15px;
                 }
@@ -168,6 +236,9 @@
             }
             &__col1 {
                 width: 66.2%;
+                @include bp($point_2) {
+                    width: 480px;
+                }
             }
             &__img1 {
                 position: relative;
@@ -175,6 +246,7 @@
                 background-size: cover;
                 height: 40rem;
                 background-repeat: no-repeat;
+                background-position: center;
             }
             &__img2 {
                 position: relative;
@@ -183,6 +255,9 @@
                 height: 40rem;
                 background-repeat: no-repeat;
                 background-size: cover;
+                @include bp($point_5) {
+                    max-width: 336px;
+                }
             }
             &__img3 {
                 position: relative;
@@ -191,6 +266,9 @@
                 height: 40rem;
                 background-repeat: no-repeat;
                 background-size: cover;
+                @include bp($point_5) {
+                    max-width: 336px;
+                }
             }
             &__img4 {
                 position: relative;
@@ -199,6 +277,9 @@
                 height: 40rem;
                 background-repeat: no-repeat;
                 background-size: cover;
+                @include bp($point_5) {
+                    max-width: 336px;
+                }
             }
             &__img5 {
                 position: relative;
@@ -207,6 +288,9 @@
                 height: 40rem;
                 background-repeat: no-repeat;
                 background-size: cover;
+                @include bp($point_5) {
+                    max-width: 336px;
+                }
             }
             &__title {
                 position: absolute;
@@ -218,12 +302,26 @@
             }
         }
         
-        // .project-block {
-        //     margin-right: 0;
-        // }
+        .services-block__col2-mobile {
+            @include bp($point_2) {
+                margin-top: 20px !important;
+            }
+        }
+        
         .titleBlock-floatRight {
             float: right;
             margin-top: -15rem;
+            @include bp($point_4) {
+                margin-top: -12rem;
+                float: left;
+            }
+        }
+        
+        .phoneBox-mobile {
+            display: none;
+            @include bp($point_4) {
+                display: block;
+            }
         }
         
         .project-block {
@@ -231,15 +329,30 @@
                 margin-top: 30rem;
                 display: flex;
                 justify-content: space-between;
+                @include bp($point_2) {
+                    flex-wrap: wrap;
+                }
+                @include bp($point_4) {
+                    margin-top: 20rem;
+                }
             }
             &__text {
                 margin-top: 2.4rem;
                 font-size: 1.8rem;
                 color: #000;
                 font-family: $font_4;
+                @include bp($point_5) {
+                    margin-top: 0rem;
+                }
             }
             &__item {
                 margin-right: 20px;
+                @include bp($point_5) {
+                    margin-bottom: 30px;
+                }
+            }
+            &__img img {
+                width: 100%;
             }
         }
         
@@ -265,8 +378,152 @@
             &__list {
                 margin-left: 4%;
             }
+            &__item {
+                @include bp($point_4) {
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
         
-        // .slick-list {
-        //     margin-left: 4% !important;
-        // }
+        .arrow-black {
+            @include bp($point_5) {
+                display: none;
+            }
+        }
+        
+        .aboutPage {
+            &__blockText {
+                margin-top: 6.8rem;
+                @include bp($point_5) {
+                    margin-top: 0rem;
+                }
+            }
+            &__text {
+                width: 30%;
+                @include bp($point_2) {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    width: 70%;
+                }
+                @include bp($point_5) {
+                    width: 100%;
+                    padding-right: 0rem;
+                    padding-left: 0rem;
+                }
+            }
+            &__text-center {
+                margin: auto;
+            }
+            &__text-mobile {
+                padding-right: 2rem;
+                padding-left: 2rem;
+            }
+        }
+        
+        .aboutPage__text p {
+            font-family: $font_6;
+        }
+        
+        .aboutPage__text p span {
+            font-family: $font_1;
+        }
+        
+        .advantagesBlock {
+            padding-right: 30rem;
+            padding-left: 30rem;
+            padding-bottom: 175px;
+            margin-top: -10%;
+            background-image: url(../i/block-aboutCompany.png);
+            @include bp($point_2) {
+                background-image: url(../i/block-aboutCompany-mobile.png);
+                margin-top: 0%;
+                padding-bottom: 40px;
+                background-size: cover;
+                padding-right: 5rem;
+                padding-left: 5rem;
+            }
+            @include bp($point_2) {
+                padding-right: 2rem;
+                padding-left: 2rem;
+            }
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            &__item {
+                padding-top: 20px;
+                max-width: 35rem;
+                width: 100%;
+                height: 20rem;
+                @include bp($point_2) {
+                    margin-bottom: 20px;
+                }
+                &-borderOne {
+                    border: 1px solid #FFFFFF;
+                    border-radius: 30px 0px 0px 0px;
+                    @include bp($point_2) {
+                        border-radius: 0px;
+                    }
+                }
+            }
+            &__item-text {
+                margin-top: 2.6rem;
+            }
+            &__item-borderThree {
+                border: 1px solid #FFFFFF;
+                border-radius: 0px 30px 0px 0px;
+                @include bp($point_2) {
+                    border-radius: 0px;
+                }
+            }
+            &__item-borderFour {
+                border: 1px solid #FFFFFF;
+                border-radius: 0px 0px 0px 30px;
+                @include bp($point_2) {
+                    border-radius: 0px;
+                }
+            }
+            &__item-borderSix {
+                border: 1px solid #FFFFFF;
+                border-radius: 0px 0px 30px 0px;
+                @include bp($point_2) {
+                    border-radius: 0px;
+                }
+            }
+            &__item-border {
+                border: 1px solid #FFFFFF;
+            }
+            &__title {
+                padding-top: 30rem;
+                margin: auto;
+                width: 50%;
+                text-align: center;
+                font-family: $font_6;
+                color: #fff;
+                @include bp($point_2) {
+                    width: 100%;
+                    padding-top: 5rem;
+                    padding-bottom: 30px;
+                }
+            }
+            &__list {
+                padding-top: 6rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                @include bp($point_2) {
+                    justify-content: center;
+                    padding-top: 0rem;
+                }
+            }
+            &__item-num {
+                text-align: center;
+                color: $yellow;
+                font-size: 2.3rem;
+            }
+            &__item-text {
+                text-align: center;
+                color: #fff;
+            }
+        }

@@ -2,6 +2,22 @@
     background-image: url(../i/footer-bg.jpg);
     padding: 6rem;
     margin-top: 10rem;
+    background-repeat: no-repeat;
+    @include bp($point_4) {
+        background-size: cover;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 4rem;
+        padding-top: 2rem;
+        overflow-y: hidden;
+    }
+}
+
+.navFooter__titleRigh {
+    text-align: right;
+    @include bp($point_4) {
+        text-align-last: left;
+    }
 }
 
 .navFooter {
@@ -18,6 +34,15 @@
     }
     &__box {
         margin-top: 5rem;
+        @include bp($point_5) {
+            margin-top: 2rem;
+        }
+    }
+    &__titleRight {
+        text-align: right;
+        @include bp($point_4) {
+            text-align-last: left;
+        }
     }
     &__list {
         p {
@@ -63,8 +88,16 @@
         font-size: 1.2rem;
         color: #fff;
         font-family: $font_2;
+        @include bp($point_4) {
+            flex-direction: column;
+            padding-top: 1.7rem;
+            font-size: 1rem;
+        }
     }
     &__footerText-copyright {
         text-align: right;
+        @include bp($point_4) {
+            text-align: left;
+        }
     }
 }
