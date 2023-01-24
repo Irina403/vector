@@ -55,6 +55,14 @@ a {
     text-decoration: none;
 }
 
+input {
+    font-family: $font_6;
+}
+
+span {
+    font-family: $font_1 !important;
+}
+
 .mobile-indent {
     @include bp($point_4) {
         margin-top: 20px;

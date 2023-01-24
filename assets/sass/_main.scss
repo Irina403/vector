@@ -157,6 +157,9 @@
         
         .indentation {
             margin-top: 100px;
+            &__page {
+                margin-top: 60px;
+            }
             @include bp($point_5) {
                 margin-top: 50px;
             }
@@ -342,7 +345,7 @@
                 color: #000;
                 font-family: $font_4;
                 @include bp($point_5) {
-                    margin-top: 0rem;
+                    margin-top: 2rem;
                 }
             }
             &__item {
@@ -353,6 +356,28 @@
             }
             &__img img {
                 width: 100%;
+                width: 320px;
+            }
+            // @include bp($point_0) {
+            // }
+        }
+        
+        .projectsPage__item {
+            margin-top: 6rem;
+            @include bp($point_5) {
+                margin-top: 4rem;
+            }
+        }
+        
+        .projectsPage__row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include bp($point_3) {
+                justify-content: flex-start;
+            }
+            @include bp($point_4) {
+                justify-content: center;
             }
         }
         
@@ -536,10 +561,16 @@
             &__row {
                 display: flex;
                 justify-content: space-between;
+                @include bp($point_5) {
+                    flex-direction: column;
+                }
             }
             &__col {
                 margin-top: 3.8rem;
                 width: 45%;
+                @include bp($point_5) {
+                    width: 100%;
+                }
             }
             &__ttitle {
                 padding-top: 4.7rem;
@@ -557,9 +588,15 @@
                 text-transform: uppercase;
                 font-size: 1.8rem;
                 margin-bottom: 2.7rem;
+                @include bp($point_5) {
+                    text-align: center;
+                }
             }
             &__titleCol-textRight {
                 text-align: right;
+                @include bp($point_5) {
+                    text-align: center;
+                }
             }
             &__box {
                 margin-left: 40%;
@@ -567,12 +604,20 @@
                 display: flex;
                 flex-direction: column;
                 text-align: flex-end;
+                @include bp($point_3) {
+                    margin-left: 10%;
+                    width: 80%;
+                }
             }
             &__box-right {
                 width: 60%;
                 display: flex;
                 flex-direction: column;
                 text-align: flex-end;
+                @include bp($point_3) {
+                    width: 80%;
+                    margin: auto;
+                }
             }
             &__input {
                 padding-left: 10px;
@@ -606,6 +651,9 @@
                 font-family: $font_6;
                 width: 60%;
                 margin: auto;
+                @include bp($point_3) {
+                    width: 90%;
+                }
             }
         }
         
@@ -622,13 +670,14 @@
             padding-left: 10px;
             height: 5rem;
             border-radius: 20px;
+            cursor: pointer;
         }
         
         .table-wrap {
+            margin-top: 2.5rem;
             text-align: center;
             display: inline-block;
             background-color: #fff;
-            padding: 2rem 2rem;
             color: #000;
         }
         
@@ -651,14 +700,17 @@
             padding: 10px;
             text-align: center;
             border-right: 1px solid #ddd;
+            font-size: 1.4rem;
+            font-family: $font_6;
+            text-align: left;
         }
         
         table th {
-            color: #fff;
-            background-color: #444;
-            text-transform: uppercase;
-            font-size: 14px;
-            letter-spacing: 1px;
+            color: #000;
+            background-color: $yellow;
+            font-size: 1.4rem;
+            text-align: left;
+            font-family: $font_4;
         }
         
         @media screen and (max-width: 600px) {
@@ -689,4 +741,393 @@
                 text-transform: uppercase;
                 font-weight: bold;
             }
+        }
+        
+        .priceBlock {
+            margin-top: 7.3rem;
+            &__title {
+                font-size: 2.8rem;
+            }
+            &__text {
+                margin-top: 8px;
+                font-size: 1.5rem;
+                font-family: $font_6;
+            }
+        }
+        
+        .object-newPage {
+            background-image: url(../i/new_objects/new1/bg-poinnt.png);
+            background-position: center;
+            background-size: contain;
+            &__bg {
+                padding-top: 65rem;
+                background-image: url(../i/new_objects/new1/main-img.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                @include bp($point_4) {
+                    padding-top: 35rem;
+                }
+            }
+            &__ttitle {
+                padding-bottom: 15rem;
+                width: 70%;
+                font-size: 4.2rem;
+                color: #fff;
+                text-transform: uppercase;
+                @include bp($point_4) {
+                    padding-bottom: 10rem;
+                    font-size: 2.4rem;
+                    width: 100%;
+                }
+            }
+        }
+        
+        .newPost {
+            &__advant {
+                margin-top: 7.7rem;
+                @include bp($point_6) {
+                    margin-top: 3rem;
+                }
+            }
+            &__img {
+                margin-top: 12rem;
+                @include bp($point_4) {
+                    margin-top: 3rem;
+                }
+            }
+            &__textimg {
+                font-size: 1.5rem;
+                font-family: $font_4;
+                text-align: center;
+                margin-top: 5rem;
+                padding-bottom: 2.8rem;
+                border-bottom: 1px solid #B5B5B5;
+            }
+            &__img img {
+                width: 100%;
+            }
+            &__figure {
+                color: $yellow;
+                @include bp($point_4) {
+                    text-align: center;
+                }
+            }
+            &__text {
+                margin-top: 2.5rem;
+                font-size: 1.8rem;
+                font-family: $font_3;
+                @include bp($point_4) {
+                    text-align: center;
+                }
+            }
+            &__col {
+                position: relative;
+                @include bp($point_4) {
+                    margin-top: 3rem;
+                }
+            }
+            &__col-center::after {
+                content: '';
+                top: 0;
+                left: -50%;
+                position: absolute;
+                height: 135px;
+                width: 1px;
+                background-color: #B5B5B5;
+                @include bp($point_2) {
+                    left: -30%;
+                }
+                @include bp($point_4) {
+                    display: none;
+                }
+            }
+            &__col-center::before {
+                content: '';
+                top: 0;
+                right: -50%;
+                position: absolute;
+                height: 135px;
+                width: 1px;
+                background-color: #B5B5B5;
+                @include bp($point_2) {
+                    left: 120%;
+                }
+                @include bp($point_4) {
+                    display: none;
+                }
+            }
+        }
+        
+        .postBlock {
+            margin-top: 13rem;
+            @include bp($point_4) {
+                margin-top: 0rem;
+            }
+            &__row {
+                margin-top: 8.8rem;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                @include bp($point_4) {
+                    margin-top: 3rem;
+                }
+            }
+            &__text-img {
+                margin-top: 13px;
+                font-size: 1.5rem;
+                font-family: $font_3;
+            }
+            &__text-img {
+                text-align: center;
+                font-family: $font_3;
+                @include bp($point_6) {
+                    margin: 10px auto;
+                    width: 80%;
+                }
+            }
+            &__text-img span {
+                font-family: $font_1;
+            }
+            &__text {
+                font-size: 1.8rem;
+                font-family: $font_3;
+                @include bp($point_6) {
+                    font-size: 1.6rem;
+                }
+            }
+            &__col-other {
+                width: 50%;
+                padding-left: 6.5rem;
+                padding-right: 6.5rem;
+                height: 249px;
+                display: flex;
+                align-items: flex-end;
+                @include bp($point_4) {
+                    width: 100%;
+                }
+                @include bp($point_6) {
+                    padding-left: 0rem;
+                    padding-right: 0rem;
+                    height: 280px;
+                    align-items: center;
+                    text-align: center;
+                    height: 100%;
+                }
+            }
+            // &__text-mobile {
+            //     margin-top: -20rem;
+            // }
+            &__center {
+                margin-top: 8.8rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                @include bp($point_6) {
+                    margin-top: 0rem;
+                }
+                &-text {
+                    width: 50%;
+                    @include bp($point_6) {
+                        width: 100%;
+                        margin-top: 2rem;
+                        font-size: 1.6rem;
+                    }
+                }
+                @include bp($point_6) {
+                    // margin-top: 3rem;
+                }
+            }
+        }
+        
+        .decorText {
+            &__style {
+                margin-top: 6.2rem;
+                text-align: center;
+            }
+            &__style img {
+                width: 70%;
+            }
+        }
+        
+        .advantages__row-mobile {
+            @include bp($point_4) {
+                align-items: center;
+            }
+        }
+        
+        .arendaTechniki {
+            &__block {
+                margin-top: 4rem;
+            }
+            &__row {
+                margin-top: 2.8rem;
+                display: flex;
+                justify-content: space-between;
+                @include bp($point_3) {
+                    margin-top: 0rem;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                // flex-wrap: wrap;
+            }
+            &__row-end {
+                justify-content: flex-start;
+                @include bp($point_3) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+            &__item {
+                // margin-right: 20px;
+                margin-right: 7%;
+                @include bp($point_0) {
+                    margin-right: 1%;
+                }
+                @include bp($point_3) {
+                    margin-bottom: 20px;
+                }
+            }
+            &__item-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                width: 387px;
+            }
+            &__item-img img {
+                width: 387px;
+            }
+            &__item-text {
+                position: absolute;
+                text-align: center;
+                // transform: translate(-50%, -50%);
+                color: #fff;
+                font-size: 2.8rem;
+                text-transform: uppercase;
+            }
+        }
+        
+        .contactForm {
+            padding: 50px;
+            margin-top: 100px;
+            background-image: url(../i/contact-form.png);
+            background-size: cover;
+            border-radius: 30px;
+            @include bp($point_6) {
+                padding: 25px 15px;
+                margin-top: 50px;
+            }
+            &__row {
+                display: flex;
+                justify-content: space-between;
+                @include bp($point_3) {
+                    flex-direction: column;
+                }
+            }
+            &__title {
+                // position: relative;
+                font-size: 2.8rem;
+                text-transform: uppercase;
+                color: #fff;
+                @include bp($point_6) {
+                    text-align: center;
+                    font-size: 2.4rem;
+                }
+            }
+            &__title::after {
+                // position: absolute;
+                content: '';
+                display: block;
+                width: 22%;
+                height: 1px;
+                background-color: #fff;
+                @include bp($point_3) {
+                    width: 45%;
+                }
+                @include bp($point_6) {
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+            .inputStyle {
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                max-width: 58rem;
+                height: 6rem;
+                border-radius: 15px;
+                border: none;
+                background: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                padding-left: 14px;
+                &__message {
+                    padding-top: 20px;
+                    padding-bottom: 170px;
+                }
+            }
+            .inputStyle::placeholder {
+                // padding-left: 14px;
+                color: #fff;
+                font-size: 1.8remf;
+            }
+            &__col {
+                // padding-right: 2;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                @include bp($point_3) {
+                    align-items: flex-start;
+                }
+                @include bp($point_6) {
+                    align-items: center;
+                }
+            }
+            &__col-border::after {
+                position: absolute;
+                right: -40%;
+                content: '';
+                display: block;
+                width: 1px;
+                height: 100%;
+                background-color: #fff;
+            }
+        }
+        
+        .rightCol {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include bp($point_3) {
+                margin-top: 50px;
+                width: 100%;
+                justify-content: flex-start;
+            }
+            &__button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 4rem;
+                width: 259px;
+                height: 60px;
+                font-size: 1.8rem;
+                border: 1px solid #fff;
+                border-radius: 30px;
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+        
+        .rightCol p {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
         }

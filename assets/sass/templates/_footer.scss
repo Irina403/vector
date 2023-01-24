@@ -54,17 +54,26 @@
         @include bp($point_4) {
             margin-top: 2rem;
         }
+        @include bp($point_6) {
+            margin-top: 1rem;
+        }
     }
     &__item {
         padding-bottom: 2.4rem;
         a:hover {
             color: $yellow;
         }
+        @include bp($point_6) {
+            padding-bottom: 1rem;
+        }
     }
     &__item-contact {
         padding-bottom: 2.4rem;
         display: flex;
         align-items: center;
+        @include bp($point_6) {
+            padding-bottom: 1.5rem;
+        }
     }
     &__item-contact p {
         font-family: $font_2;

@@ -78,6 +78,27 @@ function raschitat() {
         case "grunt":
             cena = 380;
             break
+        case "shlak1":
+            cena = 380;
+            break
+        case "shlak2":
+            cena = 380;
+            break
+        case "sheben1":
+            cena = 380;
+            break
+        case "sheben2":
+            cena = 380;
+            break
+        case "sheben3":
+            cena = 380;
+            break
+        case "gravi":
+            cena = 380;
+            break
+        case "opilki":
+            cena = 380;
+            break
         default:
             cena = 440;
             break

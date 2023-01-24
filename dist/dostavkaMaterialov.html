@@ -22,19 +22,19 @@
               <div class="logo-icon__img"> <img src="i/icons/logo.svg" alt=""></div>
             </div>
             <ul class="menu-items menu-toggle-open">
-              <li class="navItem"><a href="#advant">Главная</a></li>
+              <li class="navItem"><a href="index.html">Главная</a></li>
               <li class="navItem"><a href="about.html">О нас</a></li>
               <li class="navItem"><a href="#price">Услуги</a>
                 <ul class="navItem__submenu">
-                  <li class="navItem__submenu-item"> <a>Аренда техники</a></li>
+                  <li class="navItem__submenu-item"> <a href="arenda-techniki.html">Аренда техники</a></li>
                   <li class="navItem__submenu-item"> <a>Строительство зданий</a></li>
                   <li class="navItem__submenu-item"> <a href="dostavkaMaterialov.html">Доставка сыпучих материалов</a></li>
                   <li class="navItem__submenu-item"> <a>Промышленное строительство</a></li>
                   <li class="navItem__submenu-item"> <a>Строительство дорог</a></li>
                 </ul>
               </li>
-              <li class="navItem"><a href="#price">Объекты</a></li>
-              <li class="navItem"><a href="#price">Аренда техники</a>
+              <li class="navItem"><a href="objects.html">Объекты</a></li>
+              <li class="navItem"><a href="arenda-techniki.html">Аренда техники</a>
                 <ul class="navItem__submenu">
                   <li class="navItem__submenu-item"> <a>Аренда самосвала (44 ед.)</a></li>
                   <li class="navItem__submenu-item"> <a>Аренда трейлера (5 ед.)</a></li>
@@ -47,7 +47,7 @@
                 </ul>
               </li>
               <li class="navItem"><a href="#price">Презентация</a></li>
-              <li class="navItem"><a href="#price">Контакты</a></li>
+              <li class="navItem"><a href="contacts.html">Контакты</a></li>
               <div class="phoneBox phoneBox-mobile">
                 <div class="phoneBox__item">
                   <div class="phoneBox__item-tel"><img src="i/icons/icon-phone.svg" alt=""><a href="tel:8202598899">(8202)59-88-99</a></div>
@@ -85,6 +85,13 @@
                         <option value="pgs">ПГС</option>
                         <option value="pesok">Песок</option>
                         <option value="grunt">Грунт растительный</option>
+                        <option value="shlak1">Шлак доменный фр. 20-40</option>
+                        <option value="shlak2">Шлак доменный несорт. фр. 0-400</option>
+                        <option value="sheben1">Щебень сталеплав.фр 0-10</option>
+                        <option value="sheben2">Щебень сталеплав.фр 10-40</option>
+                        <option value="sheben3">Щебень сталеплав.фр 40-120</option>
+                        <option value="gravi">Гравий природный фр 5-20</option>
+                        <option value="opilki">Опилки</option>
                       </select>
                       <p class="calcBlock__inputTitle">Объем в кубах</p>
                       <input class="calcBlock__input" type="text" id="volume" placeholder="">
@@ -102,6 +109,13 @@
                         <option value="pgs">ПГС</option>
                         <option value="pesok">Песок</option>
                         <option value="grunt">Грунт растительный</option>
+                        <option value="shlak1">Шлак доменный фр. 20-40</option>
+                        <option value="shlak2">Шлак доменный несорт. фр. 0-400</option>
+                        <option value="sheben1">Щебень сталеплав.фр 0-10</option>
+                        <option value="sheben2">Щебень сталеплав.фр 10-40</option>
+                        <option value="sheben3">Щебень сталеплав.фр 40-120</option>
+                        <option value="gravi">Гравий природный фр 5-20</option>
+                        <option value="opilki">Опилки</option>
                       </select>
                       <p class="calcBlock__inputTitle">Кол-во тонн</p>
                       <input class="calcBlock__input" type="text" id="volume" placeholder="">
@@ -118,7 +132,7 @@
               </div>
               <div class="priceBlock"> 
                 <div class="priceBlock__title">Прайс </div>
-                <div class="priceBlock__text">стоимость материала с доставкой в черте г.Череповец</div>
+                <div class="priceBlock__text">стоимость материала с доставкой <br> в черте г.Череповец</div>
                 <div class="table-wrap"> 
                   <table> 
                     <thead> 
@@ -141,12 +155,84 @@
                         <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">250</td>
                       </tr>
                       <tr> 
-                        <td data-label="Наименование материала">ПГС</td>
+                        <td data-label="Наименование материала">Песок</td>
                         <td data-label="Еденица измерения">м3</td>
                         <td data-label="Насыпная плотность">1,5</td>
-                        <td data-label="Цена за ед.измерения руб. с НДС до 100">280</td>
-                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">270</td>
-                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">250</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">310</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">300</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">280</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Грунт растительный</td>
+                        <td data-label="Еденица измерения">м3</td>
+                        <td data-label="Насыпная плотность">1,25</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">500</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">480</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">450</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Шлак доменный фр. 20-40</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,17</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">600</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">595</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">585</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Шлак доменный фр. 40-70</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,17</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">535</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">525</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">515</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Шлак доменный несорт. фр. 0-400</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,4</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">431</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">421</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">411</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Щебень сталеплав. Фр. 0-10</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,89</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">296</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">286</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">276</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Щебень сталеплав. Фр. 10-40</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,38</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">376</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">366</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">356</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Щебень сталеплав. Фр. 40-120</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,73</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">306</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">296</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">286</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Гравий природный фр. 5-20</td>
+                        <td data-label="Еденица измерения">м3</td>
+                        <td data-label="Насыпная плотность">1,43</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">1150</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">1140</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">1130</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Гравий природный фр. 5-20</td>
+                        <td data-label="Еденица измерения">м3</td>
+                        <td data-label="Насыпная плотность">0,25</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">220</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">210</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">200</td>
                       </tr>
                     </tbody>
                   </table>
