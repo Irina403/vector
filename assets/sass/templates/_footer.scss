@@ -1,15 +1,19 @@
 .footer {
     background-image: url(../i/footer-bg.jpg);
-    padding: 6rem;
+    padding: 6rem 22rem;
     margin-top: 10rem;
     background-repeat: no-repeat;
-    @include bp($point_4) {
+    @include bp($point_3) {
         background-size: cover;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-top: 4rem;
+        padding-top: 4rem;
+        overflow-y: hidden;
+    }
+    @include bp($point_5) {
         padding-left: 2rem;
         padding-right: 2rem;
-        margin-top: 4rem;
-        padding-top: 2rem;
-        overflow-y: hidden;
     }
 }
 

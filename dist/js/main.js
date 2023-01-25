@@ -21,7 +21,7 @@ $(document).ready(function() {
                 breakpoint: 780,
                 settings: {
                     slidesToShow: 1,
-                    // arrows: false,
+                    arrows: false,
                     infinite: true,
                     dots: true
                 }
@@ -41,7 +41,7 @@ $(document).ready(function() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    // arrows: false,
+                    arrows: true,
                     infinite: true,
                     dots: true
                 }
@@ -50,7 +50,7 @@ $(document).ready(function() {
                 breakpoint: 780,
                 settings: {
                     slidesToShow: 1,
-                    // arrows: false,
+                    arrows: true,
                     infinite: true,
                     dots: true
                 }
